@@ -1,0 +1,132 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden; 
+	color: black;
+	font-family: 'Flamenco', cursive;
+}
+header{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+	color: #fff;
+	font-size: 180%;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+	background-color: transparent;
+	color: white;
+	margin-right: 15px;
+	border: 1px white;
+}
+.btn-full:hover{
+	background-color: red;
+}
+.btn-half{
+	background-color: transparent;
+	color: white;
+	margin-right: 15px;
+	border: 1px white;
+}
+.btn-half:hover{
+	background-color: purple;
+}
+.colorchange{
+	animation: colorchangekanishq 3s infinite;
+}
+@keyframes colorchangekanishq{
+	0%{color: #fff;}
+	25%{color: yellow;}
+	50%{color: yellow;}
+	100%{color: #fff;}
+}
+.colorchanges{
+	animation: colorchangeskanishq 3s infinite;
+}
+@keyframes colorchangeskanishq{
+	0%{color: yellow;}
+	25%{color: green;}
+	50%{color: yellow;}
+	100%{color: green;}
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 150%;}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 100%;}
+	.main-nav{display: none;}
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+
+	}
+	.main-nav{float: left;}
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+@media only screen and (max-width: 480px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+	h1{font-size: 160%;}
+}

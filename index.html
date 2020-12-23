@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KanishqSpaceStation</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="row clearfix">
+			<img src="images/logo.PNG" width="200" height="200" class="logo">
+			<ul class="main-nav animated slideInDown" id="check-class">
+				 <li><a href="#"><b>ABOUT US</b></a></li>
+				 <li><a href="#"><b>HOW TO BOOK</b></a></li>
+				 <li><a href="#"><b>CHECK MORE</b></a></li>
+				 <li><a href="#"><b>SIGN UP</b></a></li>
+			</ul>
+			<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+    <div class="main-content-header">
+	<h1><b> WELCOME TO <span class="colorchange"><b>kanishq space traveller</b></span>.<br>
+	    we are the light that travels into space.</b></h1>
+    <a href="Booking.html" class="btn btn-full"><b> CLICK FOR BOOKING</b></a>
+    <a href="#" class="btn btn-nav"><b> OUR SPACE STATIONS</b></a>
+    </div>
+</header>
+<script type="text/javascript">
+	function slideshow(){
+		var x=document.getElementById('check-class');
+		if (x.style.display==="none") {
+			x.style.display="block";
+		}
+		else{
+			x.style.display="none";
+		}
+
+	}
+</script>
+
+</body>
+</html>
